@@ -4,10 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "npm-run-all -p build build-about build-event",
-    "build": "tailwindcss -i ./css/main.css -o ./css/tailwind.css --watch",
-    "build-about": "tailwindcss -i ./css/about.css -o ./css/tailwind.css --watch",
-    "build-event": "tailwindcss -i ./css/media-event.css -o ./css/tailwind.css --watch"
+    "start": "tailwindcss -i ./css/main.css -o ./css/tailwind.css --watch"
   },
   "keywords": [],
   "author": "",
