@@ -2793,6 +2793,8 @@ html {
   background: #ff0000;
 }
 
+/*====== Home section===== */
+
 .header {
   background-color: #e6e6e6;
   display: flex;
@@ -2875,12 +2877,21 @@ html {
   }
 }
 
-.main-section-event {
-  background-image: url(/images/event-main.svg);
+.main-section {
+  background-image: url(/images/banner-BOI-1.png);
   background-repeat: no-repeat;
   background-size: cover;
   height: 80vh;
   width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (min-width: 1024px) {
+  .main-section {
+    justify-content: flex-start;
+  }
 }
 
 .main-section-h1 {
@@ -2920,6 +2931,171 @@ html {
   .main-sec-p {
     font-size: 26px;
   }
+}
+
+.main-sec-btn {
+  font-family: "Mulish", sans-serif;
+  padding: 17px 22px;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+@media (min-width: 1024px) {
+  .main-sec-btn {
+    font-size: 19px;
+  }
+}
+
+.main-sec-btn {
+  background-color: #6d1aae;
+  border-top-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.invest-env-section {
+  background-image: url(/images/homepage-invest-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 80vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+/* why pakistan */
+
+.why-pak-section {
+  display: flex;
+  justify-content: center;
+}
+
+.section-intro-h {
+  color: #6d1aae;
+  font-family: "Mulish", sans-serif;
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.section-intro-p {
+  color: #251e20;
+  font-family: "Mulish", sans-serif;
+  max-width: 48rem;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+/* Latest Article */
+
+.updated-art-btn {
+  font-family: "Poppins", sans-serif;
+  padding: 9px 30px;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 500;
+  --tw-text-opacity: 1;
+  color: rgb(109 26 174 / var(--tw-text-opacity));
+  border: 1px solid #6d1aae;
+  border-top-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.updated-art-card-h {
+  font-family: "Mulish", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  --tw-text-opacity: 1;
+  color: rgb(109 26 174 / var(--tw-text-opacity));
+}
+
+.mulish-font {
+  font-family: "Poppins", sans-serif;
+}
+
+.custom-card-btn-p {
+  padding: 9px 33px !important;
+}
+
+.card-overlay ::after {
+  position: absolute;
+  content: "";
+  z-index: 10;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0) 10%,
+    rgba(179, 137, 214, 0.36747198879551823) 82%,
+    rgba(140, 74, 191, 1) 99%
+  );
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+/* footer */
+
+.footer-img {
+  max-height: 40px;
+  width: auto;
+}
+
+.footer-h {
+  font-family: "Askan", sans-serif;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.footer-p {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  font-weight: 400;
+  --tw-text-opacity: 1;
+  color: rgb(194 194 194 / var(--tw-text-opacity));
+}
+
+.footer-p2 {
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  --tw-text-opacity: 1;
+  color: rgb(194 194 194 / var(--tw-text-opacity));
+}
+
+/* =====End Home */
+
+.main-section-about {
+  background-image: url(/images/about-main.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 80vh;
+  width: 100%;
 }
 
 .main-headings {
@@ -3031,6 +3207,7 @@ html {
 @media (min-width: 768px) {
   .main-mission {
     width: 83.333333%;
+    align-items: flex-start;
     gap: 2.5rem;
   }
 }
@@ -3038,12 +3215,14 @@ html {
 @media (min-width: 1024px) {
   .main-mission {
     flex-direction: row;
+    align-items: flex-start;
   }
 }
 
 @media (min-width: 1280px) {
   .main-mission {
     flex-direction: row;
+    align-items: flex-start;
     gap: 5rem;
   }
 }
@@ -3051,12 +3230,14 @@ html {
 @media (min-width: 1536px) {
   .main-mission {
     flex-direction: row;
+    align-items: flex-start;
   }
 }
 
 .mission-vision-content {
   margin-top: 0.5rem;
   display: flex;
+  width: 50%;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -3065,34 +3246,28 @@ html {
   font-weight: 300;
 }
 
-/* footer */
-
-.footer-img {
-  max-height: 40px;
-  width: auto;
+@media (min-width: 640px) {
+  .mission-vision-content {
+    width: 83.333333%;
+  }
 }
 
-.footer-h {
-  font-family: "Askan", sans-serif;
-  font-size: 22px;
-  font-weight: 600;
+@media (min-width: 768px) {
+  .mission-vision-content {
+    width: 83.333333%;
+  }
 }
 
-.footer-p {
-  font-family: "Poppins", sans-serif;
-  font-size: 1.125rem;
-  line-height: 1.75rem;
-  font-weight: 400;
-  --tw-text-opacity: 1;
-  color: rgb(194 194 194 / var(--tw-text-opacity));
-}
+/*==== About End ==== */
 
-.footer-p2 {
-  font-family: "Poppins", sans-serif;
-  font-size: 15px;
-  font-weight: 400;
-  --tw-text-opacity: 1;
-  color: rgb(194 194 194 / var(--tw-text-opacity));
+/* Media & Events */
+
+.main-section-event {
+  background-image: url(/images/event-main.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 80vh;
+  width: 100%;
 }
 
 @media (min-width: 640px) {
