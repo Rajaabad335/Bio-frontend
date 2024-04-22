@@ -1,0 +1,165 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  overflow: scroll;
+  overflow-x: hidden;
+}
+::-webkit-scrollbar {
+  width: 0; /* Remove scrollbar space */
+  background: transparent; /* Optional: just make scrollbar invisible */
+}
+/* Optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+  background: #ff0000;
+}
+.header {
+  background-color: #e6e6e6;
+  @apply px-4 lg:px-[40px] xl:px-[82px] flex flex-col lg:flex-row gap-4 lg:items-center lg:justify-between pt-[20px] pb-[11px];
+}
+.top-address {
+  font-family: "Mulish", sans-serif;
+  @apply font-semibold leading-[15.06px] text-[12px];
+}
+.top-devider {
+  @apply border-r border-[#979191] pl-4 hidden md:inline;
+}
+.logo-img {
+  max-height: 81px;
+  width: auto;
+}
+.navLink {
+  font-family: "Mulish", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 17.57px;
+  text-align: left;
+  @apply block py-2 pl-3 pr-4 text-white bg-purple-700 rounded xl:bg-transparent xl:text-[#0E1111] xl:p-0 cursor-pointer;
+}
+.main-section {
+  background-image: url(/images/banner-BOI-1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 80vh;
+  width: 100%;
+  @apply flex items-center justify-center lg:justify-start;
+}
+.main-section-h1 {
+  font-family: "Mulish", sans-serif;
+  @apply font-bold text-[24px] md:text-[44px] lg:text-[58px] text-white;
+  line-height: 120%;
+}
+.main-sec-p {
+  font-family: "Mulish", sans-serif;
+  @apply font-semibold text-xl  md:text-[26px] text-white;
+}
+.main-sec-btn {
+  font-family: "Mulish", sans-serif;
+  padding: 17px 22px;
+  @apply text-lg lg:text-[19px] text-white;
+  background-color: #6d1aae;
+  border-top-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.invest-env-section {
+  background-image: url(/images/homepage-invest-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 80vh;
+  width: 100%;
+  @apply flex justify-center;
+}
+/* why pakistan */
+.why-pak-section {
+  @apply flex justify-center;
+}
+.section-intro-h {
+  color: #6d1aae;
+  font-family: "Mulish", sans-serif;
+  @apply text-[25px] font-bold;
+}
+.section-intro-p {
+  color: #251e20;
+  font-family: "Mulish", sans-serif;
+  @apply text-[30px] font-semibold max-w-3xl text-center;
+}
+/* Latest Article */
+.updated-art-btn {
+  font-family: "Poppins", sans-serif;
+  padding: 9px 30px;
+  @apply text-base font-medium text-[#6D1AAE];
+  border: 1px solid #6d1aae;
+  border-top-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+.updated-art-card-h {
+  font-family: "Mulish", sans-serif;
+  @apply font-semibold text-[20px] text-[#6D1AAE];
+}
+.mulish-font {
+  font-family: "Poppins", sans-serif;
+}
+.custom-card-btn-p {
+  padding: 9px 33px !important;
+}
+.card-overlay ::after {
+  position: absolute;
+  content: "";
+  z-index: 10;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0) 10%,
+    rgba(179, 137, 214, 0.36747198879551823) 82%,
+    rgba(140, 74, 191, 1) 99%
+  );
+}
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/* footer */
+.footer-img {
+  max-height: 40px;
+  width: auto;
+}
+.footer-h {
+  font-family: "Askan", sans-serif;
+  @apply text-[22px] font-semibold;
+}
+.footer-p {
+  font-family: "Poppins", sans-serif;
+  @apply text-lg font-normal text-[#C2C2C2];
+}
+.footer-p2 {
+  font-family: "Poppins", sans-serif;
+  @apply text-[15px] font-normal text-[#C2C2C2];
+}
