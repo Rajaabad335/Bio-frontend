@@ -82,15 +82,30 @@ html {
 .why-pak-section {
   @apply flex justify-center;
 }
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swip-img {
+  display: block;
+  width: auto !important;
+  height: 343px !important;
+  object-fit: cover;
+}
 .section-intro-h {
   color: #6d1aae;
   font-family: "Mulish", sans-serif;
-  @apply text-[25px] font-bold;
+  @apply text-xl md:text-[22px] lg:text-[25px] font-bold;
 }
 .section-intro-p {
   color: #251e20;
   font-family: "Mulish", sans-serif;
-  @apply text-[30px] font-semibold max-w-3xl text-center;
+  @apply text-[22px] md:text-[25px] lg:text-[30px] font-semibold max-w-3xl text-center;
 }
 /* Latest Article */
 .updated-art-btn {
@@ -106,7 +121,7 @@ html {
   @apply font-semibold text-[20px] text-[#6D1AAE];
 }
 .mulish-font {
-  font-family: "Poppins", sans-serif;
+  font-family: "Mulish", sans-serif;
 }
 .custom-card-btn-p {
   padding: 9px 33px !important;
@@ -142,7 +157,7 @@ html {
   align-items: center;
 }
 
-.swiper-slide img {
+.swip2-img {
   display: block;
   width: 74px;
   height: 74px;
@@ -187,7 +202,8 @@ html {
   @apply font-semibold text-[30px]   leading-relaxed mt-4 mb-4;
 }
 .para {
-  @apply text-2xl md:text-xl  sm:text-lg font-light leading-relaxed mt-4 mb-4;
+  font-family: "mulish", sans-serif;
+  @apply text-lg md:text-xl lg:text-2xl text-[#6C696A] mt-4 mb-4;
 }
 .view-button {
   @apply mt-2 mb-3 p-2 w-[200px] bg-[#6D1AAE] text-white font-semibold rounded-tl-xl rounded-br-xl;
@@ -206,4 +222,21 @@ html {
   background-size: cover;
   height: 80vh;
   width: 100%;
+}
+/* =====Economy-section===== */
+.economy-hero-section {
+  background-image: url(/images/economy-cover-image.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 50vh;
+  width: 100%;
+  @apply flex items-center justify-center lg:justify-start;
+}
+.country-name {
+  font-family: "mulish", sans-serif;
+  @apply text-3xl font-bold text-[#4A494A];
+}
+.investment-count {
+  font-family: "mulish", sans-serif;
+  @apply text-5xl font-bold text-[#34B1E4];
 }
