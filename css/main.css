@@ -189,8 +189,9 @@ html {
   background-image: url(/images/about-main.png);
   background-repeat: no-repeat;
   background-size: cover;
-  height: 80vh;
+  height: 50vh;
   width: 100%;
+  @apply flex items-center justify-center lg:justify-start;
 }
 .main-headings {
   @apply flex items-center justify-center mt-8 text-[#6D1AAE] font-[700] text-2xl;
@@ -220,8 +221,9 @@ html {
   background-image: url(/images/event-main.svg);
   background-repeat: no-repeat;
   background-size: cover;
-  height: 80vh;
+  height: 50vh;
   width: 100%;
+  @apply flex items-center justify-center lg:justify-start;
 }
 /* =====Economy-section===== */
 .economy-hero-section {
@@ -239,4 +241,23 @@ html {
 .investment-count {
   font-family: "mulish", sans-serif;
   @apply text-5xl font-bold text-[#34B1E4];
+}
+/* =====why pakistan -section===== */
+.why-pakistan-hero-section{
+  background-image: url(/images/economy-cover-image.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 50vh;
+  width: 100%;
+  @apply flex items-center justify-center lg:justify-start;
+}
+.main-img-sec-why-pak{
+  @apply flex lg:flex-row md:flex-col sm:flex-col w-[90%] lg:w-[90%] sm:w-[45%]   md:w-[45%]  items-center justify-center mt-10 mx-auto
+}
+.polygon{
+  background-color: #6153A3;
+  padding: 40px;
+  color: white;
+  font-weight: 500;
+  clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
 }
