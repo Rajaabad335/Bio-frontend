@@ -234,13 +234,38 @@ html {
   width: 100%;
   @apply flex items-center justify-center lg:justify-start;
 }
+.tail-of-pak {
+  background-image: url(/images/homepage-invest-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* height: 80vh; */
+  width: 100%;
+}
 .country-name {
   font-family: "mulish", sans-serif;
-  @apply text-3xl font-bold text-[#4A494A];
+  text-transform: uppercase;
+  @apply text-3xl font-bold text-[#4A494A] text-center;
 }
 .investment-count {
   font-family: "mulish", sans-serif;
-  @apply text-5xl font-bold text-[#34B1E4];
+  @apply text-5xl font-bold text-[#34B1E4] text-center;
+}
+/* ====special-eco-zones==== */
+.special-eco-hero-section {
+  background-image: url(/images/hero-img-special-eco-zones.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 50vh;
+  width: 100%;
+  @apply flex items-center justify-center lg:justify-start;
+}
+.map-section {
+  background-image: url(/images/homepage-invest-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 80vh;
+  width: 100%;
+  @apply flex justify-center;
 }
 /* =====why pakistan -section===== */
 .why-pakistan-hero-section{
