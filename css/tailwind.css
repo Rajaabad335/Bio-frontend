@@ -782,6 +782,10 @@ video {
   margin-left: 0.75rem;
 }
 
+.ml-\[6px\] {
+  margin-left: 6px;
+}
+
 .ml-auto {
   margin-left: auto;
 }
@@ -792,6 +796,10 @@ video {
 
 .mr-4 {
   margin-right: 1rem;
+}
+
+.mr-\[6px\] {
+  margin-right: 6px;
 }
 
 .mr-auto {
@@ -830,6 +838,10 @@ video {
   margin-top: 0.5rem;
 }
 
+.mt-20 {
+  margin-top: 5rem;
+}
+
 .mt-3 {
   margin-top: 0.75rem;
 }
@@ -844,10 +856,6 @@ video {
 
 .mt-6 {
   margin-top: 1.5rem;
-}
-
-.mt-20 {
-  margin-top: 5rem;
 }
 
 .box-border {
@@ -982,10 +990,6 @@ video {
   width: 1.5rem;
 }
 
-.w-\[150px\] {
-  width: 150px;
-}
-
 .w-\[50\%\] {
   width: 50%;
 }
@@ -1017,6 +1021,10 @@ video {
 
 .w-full {
   width: 100%;
+}
+
+.w-1\/2 {
+  width: 50%;
 }
 
 .min-w-0 {
@@ -1581,6 +1589,10 @@ video {
   gap: 1.5rem;
 }
 
+.gap-2 {
+  gap: 0.5rem;
+}
+
 .gap-x-12 {
   -moz-column-gap: 3rem;
        column-gap: 3rem;
@@ -2020,6 +2032,10 @@ video {
   border-width: 6px;
 }
 
+.border-\[3px\] {
+  border-width: 3px;
+}
+
 .border-x {
   border-left-width: 1px;
   border-right-width: 1px;
@@ -2121,16 +2137,6 @@ video {
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-
-.bg-red-100 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(254 226 226 / var(--tw-bg-opacity));
-}
-
-.bg-red-50 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(254 242 242 / var(--tw-bg-opacity));
 }
 
 .decoration-slice {
@@ -2267,6 +2273,11 @@ video {
   padding: 1.5rem;
 }
 
+.px-10 {
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
+
 .px-2 {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
@@ -2315,11 +2326,6 @@ video {
 .py-5 {
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
-}
-
-.px-10 {
-  padding-left: 2.5rem;
-  padding-right: 2.5rem;
 }
 
 .pe-8 {
@@ -2526,6 +2532,11 @@ video {
   color: rgb(112 112 112 / var(--tw-text-opacity));
 }
 
+.text-\[\#F8AC00\] {
+  --tw-text-opacity: 1;
+  color: rgb(248 172 0 / var(--tw-text-opacity));
+}
+
 .text-\[\#FFA31A\] {
   --tw-text-opacity: 1;
   color: rgb(255 163 26 / var(--tw-text-opacity));
@@ -2549,11 +2560,6 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.text-\[\#F8AC00\] {
-  --tw-text-opacity: 1;
-  color: rgb(248 172 0 / var(--tw-text-opacity));
 }
 
 .underline {
@@ -3318,15 +3324,28 @@ html {
 }
 
 .main-headings {
-  margin-top: 2rem;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.5rem;
-  line-height: 2rem;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
   font-weight: 700;
   --tw-text-opacity: 1;
   color: rgb(109 26 174 / var(--tw-text-opacity));
+}
+
+@media (min-width: 640px) {
+  .main-headings {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .main-headings {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
 }
 
 .about-section {
@@ -3593,6 +3612,32 @@ html {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+/* ===== technology section ====== */
+
+.main-technology-sector{
+  background-image: url(/images/technology-main.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 50vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (min-width: 1024px) {
+  .main-technology-sector {
+    justify-content: flex-start;
+  }
+}
+
+.main-bg-section {
+  background-image: url(/images/homepage-invest-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+}
+
 .polygon{
   background-color: #6153A3;
   height: 150px;
@@ -3612,11 +3657,136 @@ html {
   margin-top: 0.5rem;
   width: 150px;
   text-align: center;
+  font-size: 14px;
+  --tw-text-opacity: 1;
+  color: rgb(92 91 91 / var(--tw-text-opacity));
+}
+
+@media (min-width: 640px) {
+  .polygon-detail {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .polygon-detail {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
 }
 
 .sup{
   color: #F8AC00;
   font-size: 20px;
+}
+
+.viewAll-white {
+  margin-top: 0.5rem;
+  margin-bottom: 0.75rem;
+  width: 200px;
+  border-top-left-radius: 0.75rem;
+  border-bottom-right-radius: 0.75rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  padding: 0.5rem;
+  font-weight: 700;
+  --tw-text-opacity: 1;
+  color: rgb(109 26 174 / var(--tw-text-opacity));
+}
+
+.img-heading {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  font-weight: 700;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+@media (min-width: 640px) {
+  .img-heading {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .img-heading {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .img-heading {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .img-heading {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+}
+
+@media (min-width: 1536px) {
+  .img-heading {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+}
+
+.img-para {
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem;
+  font-size: 14px;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+@media (min-width: 640px) {
+  .img-para {
+    margin-top: 0.75rem;
+    margin-bottom: 0.75rem;
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 768px) {
+  .img-para {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .img-para {
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .img-para {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+}
+
+@media (min-width: 1536px) {
+  .img-para {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
 }
 
 @media (min-width: 640px) {
@@ -3838,6 +4008,14 @@ html {
     width: 50%;
   }
 
+  .lg\:w-2\/3 {
+    width: 66.666667%;
+  }
+
+  .lg\:w-\[80\%\] {
+    width: 80%;
+  }
+
   .lg\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
@@ -3934,6 +4112,12 @@ html {
   .xl\:px-\[82px\] {
     padding-left: 82px;
     padding-right: 82px;
+  }
+}
+
+@media (min-width: 1536px) {
+  .\32xl\:flex-row {
+    flex-direction: row;
   }
 }
 
