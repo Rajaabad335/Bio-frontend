@@ -151,7 +151,6 @@ html {
 .swiper-slide {
   text-align: center;
   font-size: 18px;
-
   display: flex;
   justify-content: center;
   align-items: center;
@@ -272,7 +271,7 @@ html {
 }
 /* =====why pakistan -section===== */
 .why-pakistan-hero-section{
-  background-image: url(/images/economy-cover-image.png);
+  background-image: url(/images/why-pak.png);
   background-repeat: no-repeat;
   background-size: cover;
   height: 50vh;
