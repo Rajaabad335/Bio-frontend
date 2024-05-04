@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/css/main.css" />
     <link rel="stylesheet" href="/css/tailwind.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <script src="script.js" defer></script>
     <title>BIO Frontend</title>
   </head>
   <body>
@@ -501,7 +503,7 @@
 
     <!-- ===== main para IT and ITES =========== -->\
     <!-- ====== main heading for every where ======== -->
-    <div class="main-headings mt-5">
+    <d iv class="main-headings mt-5">
       <div class="mr-[6px]">
         <img src="/images/heading-left-bar-1.png" alt="" /><img
           src="/images/heading-left-bar-2.png"
@@ -517,7 +519,7 @@
           class="mt-1"
         />
       </div>
-    </div>
+    </d>
     <div class="para px-10 mt-20">
       Pakistan IT sector is among the fastest growing sectors of the economy and
       is emerging as an ideal IT destination in the world. The IT sector is
@@ -545,6 +547,31 @@
         />
       </div>
     </div>
+    <div class="wrapper mx-auto mt-5">
+      <i id="left" class="fa-solid fa-angle-left"></i>
+      <ul class="carousel">
+        <li class="card">
+          <div class="img"><img src="/images/tec-card-carsoule-1.png" alt="img" draggable="false"></div>
+        </li>
+        <li class="card">
+          <div class="img"><img src="/images/tec-card-carsoule-2.png" alt="img" draggable="false"></div>
+        </li>
+        <li class="card">
+          <div class="img"><img src="/images/tec-card-carsoule-3.png" alt="img" draggable="false"></div>
+        </li>
+        <li class="card">
+          <div class="img"><img src="/images/tec-card-carsoule-1.png" alt="img" draggable="false"></div>
+        </li>
+        <li class="card">
+          <div class="img"><img src="/images/tec-card-carsoule-2.png" alt="img" draggable="false"></div>
+        </li>
+        <li class="card">
+          <div class="img"><img src="/images/tec-card-carsoule-3.png" alt="img" draggable="false"></div>
+        </li>
+      </ul>
+      <i id="right" class="fa-solid fa-angle-right"></i>
+    </div>
+
 
     <!-- ===== main para incentives for IT sectors =========== -->
     <!-- ====== main heading for every where ======== -->
@@ -565,22 +592,26 @@
         />
       </div>
     </div>
+
     <div
-      class="flex flex-col lg:flex-row xl:flex-row 2xl:flex-row justify-center gap-10 px-20"
+      class="flex flex-col lg:flex-row xl:flex-row 2xl:flex-row justify-center gap-4 px-20"
     >
-      <section class="p-4 lg:p-8 dark:bg-gray-100 dark:text-gray-800">
-        <div class="container mx-auto space-y-12">
+      <section class="p-4 flex-1">
+        <div class="container mx-auto">
           <div class="flex flex-col overflow-hidden rounded-md shadow-sm">
-            <img
-              src="/images/it-incentives-1.jpg"
-              alt=""
-              class="dark:bg-gray-500 aspect-video"
-            />
+            <img src="/images/it-incentives-1.jpg" alt="" class="h-64" />
             <div
-              class="flex flex-col justify-center flex-1 p-6 bg-[#6D1AAE] main-bg-section"
+              class="flex flex-col justify-center p-6 bg-[#6D1AAE] main-bg-section"
             >
-              <h3 class="img-heading">Mohenjo-daro</h3>
-              <p class="img-para">
+            <div class="flex text-white h-20 gap-3">
+              <div class="mt-[10px] md:mt-[13px]  lg:mt-[14px] xl:mt-4">
+                <img src="/images/left-bar-white.png" alt="" /><img
+                  src="/images/left-bar-2-white.png"
+                  alt=""
+                  class="mt-1"
+                />
+              </div><div><h3 class="img-heading">Reduced Income Tax (0.25%)</h3></div></div>
+              <p class="img-para line-clamp-2">
                 PSEB registered companies to pay only 0.25 percent tax on export
                 proceeds of IT and ITeS
               </p>
@@ -588,19 +619,22 @@
           </div>
         </div>
       </section>
-      <section class="p-4 lg:p-8 dark:bg-gray-100 dark:text-gray-800">
-        <div class="container mx-auto space-y-12">
+      <section class="p-4 flex-1">
+        <div class="container mx-auto">
           <div class="flex flex-col overflow-hidden rounded-md shadow-sm">
-            <img
-              src="/images/it-incentives-2.png"
-              alt=""
-              class="dark:bg-gray-500 aspect-video"
-            />
+            <img src="/images/it-incentives-2.png" alt="" class="h-64" />
             <div
-              class="flex flex-col justify-center flex-1 p-6 bg-[#6D1AAE] main-bg-section"
+              class="flex flex-col justify-center p-6 bg-[#6D1AAE] main-bg-section"
             >
-              <h3 class="img-heading">Taxila</h3>
-              <p class="img-para">
+              <div class="flex text-white h-20 gap-3">
+                <div class="mt-[10px] md:mt-[13px]  lg:mt-[14px] xl:mt-4">
+                  <img src="/images/left-bar-white.png" alt="" /><img
+                    src="/images/left-bar-2-white.png"
+                    alt=""
+                    class="mt-1"
+                  />
+                </div><div><h3 class="img-heading">100% tax credit for IT startups</h3></div></div>
+              <p class="img-para line-clamp-2">
                 PSEB registered startups are allowed 100 percent tax credit
                 including minimum, alternate corporate tax and final taxes for
                 three years.
@@ -609,19 +643,26 @@
           </div>
         </div>
       </section>
-      <section class="p-4 lg:p-8 dark:bg-gray-100 dark:text-gray-800">
-        <div class="container mx-auto space-y-12">
+      <section class="p-4 flex-1">
+        <div class="container mx-auto">
           <div class="flex flex-col overflow-hidden rounded-md shadow-sm">
             <img
               src="/images/it-incentives-3.png"
               alt=""
-              class="dark:bg-gray-500 aspect-video"
+              class="dark:bg-gray-500 h-64 w-full"
             />
             <div
-              class="flex flex-col justify-center flex-1 p-6 bg-[#6D1AAE] main-bg-section"
+              class="flex flex-col justify-center p-6 bg-[#6D1AAE] main-bg-section"
             >
-              <h3 class="img-heading">Historical Monuments at Makli, Thatta</h3>
-              <p class="img-para">
+            <div class="flex text-white h-20 gap-3">
+              <div class="mt-[10px] md:mt-[13px]  lg:mt-[14px] xl:mt-4">
+                <img src="/images/left-bar-white.png" alt="" /><img
+                  src="/images/left-bar-2-white.png"
+                  alt=""
+                  class="mt-1"
+                />
+              </div><div><h3 class="img-heading">venture capital funds till June 2025</h3></div></div>
+              <p class="img-para line-clamp-2">
                 100 percent equity ownership allowed to foreign investors, 100
                 percent repatriation of capital and dividends allowed, and tax
                 holiday
@@ -1091,4 +1132,132 @@
       </div>
     </footer>
   </body>
+ <script>
+  const wrapper = document.querySelector(".wrapper");
+const carousel = document.querySelector(".carousel");
+const firstCardWidth = carousel.querySelector(".card").offsetWidth;
+const arrowBtns = document.querySelectorAll(".wrapper i");
+const carouselChildrens = [...carousel.children];
+let isDragging = false, isAutoPlay = true, startX, startScrollLeft, timeoutId;
+// Get the number of cards that can fit in the carousel at once
+let cardPerView = Math.round(carousel.offsetWidth / firstCardWidth);
+// Insert copies of the last few cards to beginning of carousel for infinite scrolling
+carouselChildrens.slice(-cardPerView).reverse().forEach(card => {
+    carousel.insertAdjacentHTML("afterbegin", card.outerHTML);
+});
+// Insert copies of the first few cards to end of carousel for infinite scrolling
+carouselChildrens.slice(0, cardPerView).forEach(card => {
+    carousel.insertAdjacentHTML("beforeend", card.outerHTML);
+});
+// Scroll the carousel at appropriate postition to hide first few duplicate cards on Firefox
+carousel.classList.add("no-transition");
+carousel.scrollLeft = carousel.offsetWidth;
+carousel.classList.remove("no-transition");
+// Add event listeners for the arrow buttons to scroll the carousel left and right
+arrowBtns.forEach(btn => {
+    btn.addEventListener("click", () => {
+        carousel.scrollLeft += btn.id == "left" ? -firstCardWidth : firstCardWidth;
+    });
+});
+const dragStart = (e) => {
+    isDragging = true;
+    carousel.classList.add("dragging");
+    // Records the initial cursor and scroll position of the carousel
+    startX = e.pageX;
+    startScrollLeft = carousel.scrollLeft;
+}
+const dragging = (e) => {
+    if(!isDragging) return; // if isDragging is false return from here
+    // Updates the scroll position of the carousel based on the cursor movement
+    carousel.scrollLeft = startScrollLeft - (e.pageX - startX);
+}
+const dragStop = () => {
+    isDragging = false;
+    carousel.classList.remove("dragging");
+}
+const infiniteScroll = () => {
+    // If the carousel is at the beginning, scroll to the end
+    if(carousel.scrollLeft === 0) {
+        carousel.classList.add("no-transition");
+        carousel.scrollLeft = carousel.scrollWidth - (2 * carousel.offsetWidth);
+        carousel.classList.remove("no-transition");
+    }
+    // If the carousel is at the end, scroll to the beginning
+    else if(Math.ceil(carousel.scrollLeft) === carousel.scrollWidth - carousel.offsetWidth) {
+        carousel.classList.add("no-transition");
+        carousel.scrollLeft = carousel.offsetWidth;
+        carousel.classList.remove("no-transition");
+    }
+    // Clear existing timeout & start autoplay if mouse is not hovering over carousel
+    clearTimeout(timeoutId);
+    if(!wrapper.matches(":hover")) autoPlay();
+}
+const autoPlay = () => {
+    if(window.innerWidth < 800 || !isAutoPlay) return; // Return if window is smaller than 800 or isAutoPlay is false
+    // Autoplay the carousel after every 2500 ms
+    timeoutId = setTimeout(() => carousel.scrollLeft += firstCardWidth, 2500);
+}
+autoPlay();
+carousel.addEventListener("mousedown", dragStart);
+carousel.addEventListener("mousemove", dragging);
+document.addEventListener("mouseup", dragStop);
+carousel.addEventListener("scroll", infiniteScroll);
+wrapper.addEventListener("mouseenter", () => clearTimeout(timeoutId));
+wrapper.addEventListener("mouseleave", autoPlay);
+ </script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 3,
+        grabCursor: true,
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+        breakpoints: {
+          640: {
+            slidesPerView: 3,
+          },
+          768: {
+            slidesPerView: 4,
+          },
+          1024: {
+            slidesPerView: 5,
+          },
+          1440: {
+            slidesPerView: 5,
+          },
+        },
+        loop: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+      var swiper1 = new Swiper(".mySwiper1", {
+        slidesPerView: 2,
+        grabCursor: true,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+        breakpoints: {
+          640: {
+            slidesPerView: 2,
+          },
+          768: {
+            slidesPerView: 2,
+          },
+          1024: {
+            slidesPerView: 3,
+          },
+          1440: {
+            slidesPerView: 3,
+          },
+        },
+        loop: true,
+      });
+    </script> -->
 </html>
