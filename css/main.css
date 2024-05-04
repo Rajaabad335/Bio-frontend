@@ -197,7 +197,10 @@ html {
   @apply flex items-center justify-center  text-[#6D1AAE] font-[700] text-lg sm:text-xl md:text-2xl ; 
 }
 .about-section {
-  @apply flex flex-col-reverse lg:flex-row xl:flex-row  2xl:flex-row items-center mt-20;
+  @apply flex flex-col-reverse lg:flex-row xl:flex-row  2xl:flex-row items-center mt-2 sm:mt-5 md:mt-8 lg:mt-10 xl:mt-[50px] 2xl:mt-20 px-10 xl:px-[50px] 2xl:px-20;
+}
+.about-section-1 {
+  @apply flex flex-col lg:flex-row xl:flex-row  2xl:flex-row items-center mt-2 sm:mt-5 md:mt-8 lg:mt-10 xl:mt-[50px] 2xl:mt-20 px-10 xl:px-[50px] 2xl:px-20;
 }
 .para1 {
   @apply font-semibold text-[30px]  leading-relaxed mt-4 mb-4;
