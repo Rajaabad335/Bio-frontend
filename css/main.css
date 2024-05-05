@@ -184,6 +184,45 @@ html {
   font-family: "Poppins", sans-serif;
   @apply text-[15px] font-normal text-[#C2C2C2];
 }
+.card-how{
+  @apply flex flex-col items-center relative 
+}
+.card-content{
+  box-shadow: 0 0 5px #aaa8a8;
+  @apply rounded-md pt-16 pb-8 px-8 h-[100%]  relative
+}
+.card-3-bor{
+  background: linear-gradient(#ffffff, #ffffff) 50% 50%/calc(100% - 30px) calc(100% - 30px) no-repeat,
+  linear-gradient(rgba(0,189,234,0) 48%, #F2B04D 55%, #F2B04D 100%);
+border-radius: 4px;
+box-sizing: border-box; 
+background: linear-gradient(#ffffff, #ffffff) 50% 50%/calc(100% - 30px) calc(100% - 30px) no-repeat,
+            linear-gradient(0deg, rgba(0,189,234,0) 48%, #F2B04D 55%, #F2B04D 100%);
+border-radius: 4px;
+padding: 15px;
+box-sizing: border-box;
+}
+.card-2-bor{
+  background: linear-gradient(#ffffff, #ffffff) 50% 50%/calc(100% - 30px) calc(100% - 30px) no-repeat,
+  linear-gradient(rgba(0,189,234,0) 48%, #00bdea 55%, #48abe0 100%);
+border-radius: 4px;
+padding: 15px;
+box-sizing: border-box; 
+}
+.card-4-bor{
+  background: linear-gradient(#ffffff, #ffffff) 50% 50%/calc(100% - 30px) calc(100% - 30px) no-repeat,
+  linear-gradient(rgba(0,189,234,0) 48%, #39AA7D 55%, #39AA7D 100%);
+border-radius: 4px;
+padding: 15px;
+box-sizing: border-box; 
+}
+.card-1-bor{ 
+background: linear-gradient(#ffffff, #ffffff) 50% 50%/calc(100% - 30px) calc(100% - 30px) no-repeat,
+            linear-gradient(0deg, rgba(0,189,234,0) 48%, #6D1AAE 55%, #6D1AAE 100%);
+border-radius: 4px;
+padding: 15px;
+box-sizing: border-box;
+}
 /* =====End Home */
 .main-section-about {
   background-image: url(/images/about-main.png);
