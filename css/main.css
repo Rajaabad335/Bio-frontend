@@ -167,6 +167,12 @@ html {
   width: 14px !important;
   border-radius: 0 !important;
 }
+.uper-layer{
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform : translate(-50%,-50%)
+}
 /* footer */
 .footer-img {
   max-height: 40px;
