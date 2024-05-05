@@ -41,6 +41,7 @@ html {
   font-weight: 600;
   line-height: 17.57px;
   text-align: left;
+  user-select: none;
   @apply block py-2 pl-3 pr-4 text-white bg-purple-700 rounded xl:bg-transparent xl:text-[#0E1111] xl:p-0 cursor-pointer;
 }
 .main-section {
