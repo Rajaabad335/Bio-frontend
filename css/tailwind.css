@@ -900,6 +900,10 @@ video {
   margin-top: 10px;
 }
 
+.mb-10 {
+  margin-bottom: 2.5rem;
+}
+
 .box-border {
   box-sizing: border-box;
 }
@@ -1041,6 +1045,10 @@ video {
 .h-fit {
   height: -moz-fit-content;
   height: fit-content;
+}
+
+.h-full {
+  height: 100%;
 }
 
 .max-h-\[171px\] {
