@@ -325,7 +325,7 @@ box-sizing: border-box;
   @apply flex items-center justify-center lg:justify-start;
 }
 .main-why-pak {
-  @apply flex gap-20 md:gap-10 sm:gap-5 lg:gap-20 md:flex-col sm:flex-col lg:flex-row justify-evenly items-center px-20 mt-10;
+  @apply flex flex-col  gap-20 md:gap-10 sm:gap-5 lg:gap-20 lg:flex-row justify-evenly items-center px-20 mt-10;
 }
 .why-pak-card-para {
   @apply my-6 text-white;
