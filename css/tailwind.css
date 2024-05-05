@@ -671,6 +671,22 @@ video {
   top: 13rem;
 }
 
+.left-\[28\%\] {
+  left: 28%;
+}
+
+.top-\[-5\%\] {
+  top: -5%;
+}
+
+.top-\[27\%\] {
+  top: 27%;
+}
+
+.top-\[23\%\] {
+  top: 23%;
+}
+
 .isolate {
   isolation: isolate;
 }
@@ -1139,6 +1155,10 @@ video {
 
 .max-w-md {
   max-width: 28rem;
+}
+
+.max-w-\[113px\] {
+  max-width: 113px;
 }
 
 .flex-1 {
@@ -2510,6 +2530,11 @@ video {
   padding-bottom: 1.25rem;
 }
 
+.py-80 {
+  padding-top: 20rem;
+  padding-bottom: 20rem;
+}
+
 .pb-4 {
   padding-bottom: 1rem;
 }
@@ -3348,11 +3373,107 @@ html {
   border-bottom-right-radius: 15px;
 }
 
+.main {
+  position: relative;
+  /* border: 2px dotted #000000; */
+  border-radius: 50%;
+  width: 174px;
+  height: 174px;
+  overflow: visible;
+  background-image: url(/images/circle-main.png);
+}
+
+.cirlce1 {
+  position: absolute;
+  top: -270px;
+  right: -15px;
+  transform: rotate(-1deg);
+  height: 234.5px;
+  width: 210.2px;
+  background: url(/images/wing-vector.png);
+}
+
+.svg-circle1 {
+  position: relative;
+  left: 76px;
+  bottom: -168px;
+}
+
+.cirlce2 {
+  position: absolute;
+  height: 234.5px;
+  width: 210.2px;
+  right: -161px;
+  top: -221px;
+  transform: rotate(39deg);
+  background: url(/images/wing-vector.png);
+}
+
+.cirlce3 {
+  position: absolute;
+  height: 234.5px;
+  width: 210.2px;
+  right: -242px;
+  transform: rotate(76deg);
+  top: -95px;
+  background: url(/images/wing-vector.png);
+}
+
+.cirlce4 {
+  position: absolute;
+  height: 234.5px;
+  width: 210.2px;
+  right: -231px;
+  top: 57px;
+  transform: rotate(113deg);
+  background: url(/images/wing-vector.png);
+}
+
+.cirlce5 {
+  position: absolute;
+  height: 234.5px;
+  width: 210.2px;
+  right: -122px;
+  top: 174px;
+  transform: rotate(153deg);
+  background: url(/images/wing-vector.png);
+}
+
+.cirlce6 {
+  position: absolute;
+  height: 234.5px;
+  width: 210.2px;
+  right: 32px;
+  top: 192px;
+  transform: rotate(194deg);
+  background: url(/images/wing-vector.png);
+}
+
+.cirlce7 {
+  position: absolute;
+  height: 234.5px;
+  width: 210.2px;
+  left: -202px;
+  top: 109px;
+  transform: rotate(233deg);
+  background: url(/images/wing-vector.png);
+}
+
+.cirlce8 {
+  position: absolute;
+  height: 234.5px;
+  width: 210.2px;
+  left: -250px;
+  top: -42px;
+  transform: rotate(274deg);
+  background: url(/images/wing-vector.png);
+}
+
 .invest-env-section {
   background-image: url(/images/homepage-invest-bg.png);
   background-repeat: no-repeat;
   background-size: cover;
-  height: 80vh;
+  height: auto;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -3548,7 +3669,7 @@ html {
   align-items: center;
 }
 
-.card-content{
+.card-content {
   box-shadow: 0 0 5px #aaa8a8;
   position: relative;
   height: 100%;
@@ -3556,38 +3677,43 @@ html {
   padding-left: 2rem;
   padding-right: 2rem;
   padding-top: 4rem;
-  padding-bottom: 2rem
+  padding-bottom: 2rem;
 }
 
-.card-3-bor{
-  background: linear-gradient(#ffffff, #ffffff) 50% 50%/calc(100% - 30px) calc(100% - 30px) no-repeat,
-  linear-gradient(rgba(0,189,234,0) 48%, #F2B04D 55%, #F2B04D 100%);
-  background: linear-gradient(#ffffff, #ffffff) 50% 50%/calc(100% - 30px) calc(100% - 30px) no-repeat,
-            linear-gradient(0deg, rgba(0,189,234,0) 48%, #F2B04D 55%, #F2B04D 100%);
+.card-3-bor {
+  background: linear-gradient(#ffffff, #ffffff) 50% 50% / calc(100% - 30px)
+      calc(100% - 30px) no-repeat,
+    linear-gradient(rgba(0, 189, 234, 0) 48%, #f2b04d 55%, #f2b04d 100%);
+  background: linear-gradient(#ffffff, #ffffff) 50% 50% / calc(100% - 30px)
+      calc(100% - 30px) no-repeat,
+    linear-gradient(0deg, rgba(0, 189, 234, 0) 48%, #f2b04d 55%, #f2b04d 100%);
   border-radius: 4px;
   padding: 15px;
   box-sizing: border-box;
 }
 
-.card-2-bor{
-  background: linear-gradient(#ffffff, #ffffff) 50% 50%/calc(100% - 30px) calc(100% - 30px) no-repeat,
-  linear-gradient(rgba(0,189,234,0) 48%, #00bdea 55%, #48abe0 100%);
+.card-2-bor {
+  background: linear-gradient(#ffffff, #ffffff) 50% 50% / calc(100% - 30px)
+      calc(100% - 30px) no-repeat,
+    linear-gradient(rgba(0, 189, 234, 0) 48%, #00bdea 55%, #48abe0 100%);
   border-radius: 4px;
   padding: 15px;
   box-sizing: border-box;
 }
 
-.card-4-bor{
-  background: linear-gradient(#ffffff, #ffffff) 50% 50%/calc(100% - 30px) calc(100% - 30px) no-repeat,
-  linear-gradient(rgba(0,189,234,0) 48%, #39AA7D 55%, #39AA7D 100%);
+.card-4-bor {
+  background: linear-gradient(#ffffff, #ffffff) 50% 50% / calc(100% - 30px)
+      calc(100% - 30px) no-repeat,
+    linear-gradient(rgba(0, 189, 234, 0) 48%, #39aa7d 55%, #39aa7d 100%);
   border-radius: 4px;
   padding: 15px;
   box-sizing: border-box;
 }
 
-.card-1-bor{
-  background: linear-gradient(#ffffff, #ffffff) 50% 50%/calc(100% - 30px) calc(100% - 30px) no-repeat,
-            linear-gradient(0deg, rgba(0,189,234,0) 48%, #6D1AAE 55%, #6D1AAE 100%);
+.card-1-bor {
+  background: linear-gradient(#ffffff, #ffffff) 50% 50% / calc(100% - 30px)
+      calc(100% - 30px) no-repeat,
+    linear-gradient(0deg, rgba(0, 189, 234, 0) 48%, #6d1aae 55%, #6d1aae 100%);
   border-radius: 4px;
   padding: 15px;
   box-sizing: border-box;
